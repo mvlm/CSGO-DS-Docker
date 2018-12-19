@@ -1,0 +1,13 @@
+version: '2'
+services:
+  cs-go:
+    build: .
+    environment:
+      - SRCDS_PORT
+      - SRCDS_TV_PORT
+      - SRCDS_RCONPW
+      - SRCDS_PW
+      - SRCDS_FPSMAX
+      - SRCDS_TICKRATE
+      - SRCDS_MAXPLAYERS
+#    cpuset: 0,1
