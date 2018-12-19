@@ -1,7 +1,7 @@
 version: '2'
 services:
   cs-go:
-    build: .
+    image: cs-go:latest
     environment:
       - SRCDS_PORT
       - SRCDS_TV_PORT
@@ -11,3 +11,5 @@ services:
       - SRCDS_TICKRATE
       - SRCDS_MAXPLAYERS
 #    cpuset: 0,1
+    labels:
+      io.rancher.container.pull_image: false
